@@ -10,3 +10,5 @@
 !*.sty
 !push_theme.ps1
 !.vscode/
+!compile.bat
+!*.png
