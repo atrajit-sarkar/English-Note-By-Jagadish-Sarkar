@@ -10,6 +10,7 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{mathtools} % For rcases
 
 % Font specifications
 % Font for Bengali
@@ -24,17 +25,15 @@
 
 % Custom commands
 \newcommand{\RightBracketBlock}[2]{%
-\[
-\left.
-\begin{array}{l}
+\par\vspace{\abovedisplayskip}\noindent
+$\begin{rcases}
 #1
-\end{array}
-\right\}
+\end{rcases}
 \quad
 \begin{array}{l}
 #2
-\end{array}
-\]
+\end{array}$
+\par\vspace{\belowdisplayskip}
 }
 
 % ------- Colors -------
