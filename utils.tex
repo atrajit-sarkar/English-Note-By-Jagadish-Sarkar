@@ -45,3 +45,41 @@ $\begin{rcases}
 
 % ragged-right paragraph columns
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% Subtopic command
+\newcommand{\subtopic}[1]{%
+    \begin{center}
+        \begin{tikzpicture}
+            \node[cloud, draw, cloud puffs=15, cloud puff arc=120, aspect=3, fill=gray!10, inner sep=10pt] {\underline{\textbf{#1}}};
+        \end{tikzpicture}
+    \end{center}
+}
+
+% Topic end separator
+\newcommand{\topicend}{%
+  \par\vspace{1.5em}%
+  \noindent\begin{center}
+    \begin{tikzpicture}[baseline=-0.6ex]
+      % Left line
+      \draw[line width=1pt, gray!50] (-3,0) -- (-0.9,0);
+      % Right line
+      \draw[line width=1pt, gray!50] (0.9,0) -- (3,0);
+
+      % Central badge
+      \shade[inner color=blue!60, outer color=blue!20, draw=gray!50, line width=0.6pt]
+        (0,0) circle (0.32);
+
+      % Inner ring
+      \draw[line width=0.5pt, white] (0,0) circle (0.20);
+
+      % Stylised check/mark inside
+      \draw[line width=0.7pt, white, rounded corners=0.5pt]
+        (-0.10,0.02) -- (-0.02,-0.10) -- (0.13,0.12);
+
+      % Decorative side dots
+      \fill[blue!20, draw=gray!50, line width=0.4pt] (-1.1,0) circle (0.06);
+      \fill[blue!20, draw=gray!50, line width=0.4pt] ( 1.1,0) circle (0.06);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.5em}%
+}
