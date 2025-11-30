@@ -1,4 +1,17 @@
 {
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "latex": false
+  },
+  "editor.suggest.showSnippets": true,
+  "[latex]": {
+    "editor.inlineSuggest.enabled": false
+  },
   "latex-workshop.latex.recipes": [
     {
       "name": "xelatex",
