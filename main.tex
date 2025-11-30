@@ -1,0 +1,36 @@
+\documentclass[12pt,oneside]{book}
+
+% Theme
+\usepackage{book-theme}
+% Import utilities (includes font specs and custom commands)
+\input{utils.tex}
+
+
+
+
+% Document
+\begin{document}
+\frontmatter
+\begin{titlepage}
+  \centering
+  {\Huge\bfseries English Grammer Hand Book\\[6pt]}
+  {\Large A note by Jagadish Sarkar\\[12pt]}
+  {\large Compiled and enhanced by Atrajit Sarkar [His grand son]\\[36pt]}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=8cm]{Dadu-hello.png}
+    \caption{My Grandpa Jagadish Sarkar}
+    \label{fig:dadu-hello}
+\end{figure}
+  \vfill
+  {\large Last Updated: \today}\\
+\end{titlepage}
+
+\tableofcontents
+\mainmatter
+
+
+% First chapter
+\include{chapter-1}
+
+\end{document}

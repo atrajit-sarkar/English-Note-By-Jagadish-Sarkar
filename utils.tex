@@ -1,0 +1,48 @@
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+% Main language
+\setmainlanguage{english}
+
+% Secondary language
+\setotherlanguage{bengali}
+
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+
+% Font specifications
+% Font for Bengali
+\newfontfamily\bengalifont[
+    Script=Bengali,
+    Language=Bengali
+]{Tiro Bangla}
+
+% Emoji support for XeLaTeX
+\newfontfamily\emojifont{Segoe UI Emoji}
+\newcommand{\emoji}[1]{{\emojifont #1}}
+
+% Custom commands
+\newcommand{\RightBracketBlock}[2]{%
+\[
+\left.
+\begin{array}{l}
+#1
+\end{array}
+\right\}
+\quad
+\begin{array}{l}
+#2
+\end{array}
+\]
+}
+
+% ------- Colors -------
+\definecolor{headerbg}{HTML}{1565C0}      % deep blue
+\definecolor{headertext}{HTML}{FFFFFF}    % white
+\definecolor{subjectcol}{HTML}{E3F2FD}    % light blue
+\definecolor{predicatecol}{HTML}{E8F5E9}  % light green
+\definecolor{tableline}{HTML}{B0BEC5}     % soft grey
+
+% ragged-right paragraph columns
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
