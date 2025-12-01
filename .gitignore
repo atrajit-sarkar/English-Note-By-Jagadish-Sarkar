@@ -1,15 +1,42 @@
-*
-!*.pdf
-!*.md
-!.gitignore
-!*.tex
-!*.bib
-!*.html
-!thinking.gif
-!*.py
-!*.sty
-!push_theme.ps1
-!.vscode/
-!.vscode/settings.json
-!compile.bat
-!*.png
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.out
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Latexmk
+*.latexmain
+
+# Backup files
+*.bak
+*~
+
+# Build output (keep PDFs though)
+# *.pdf
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+output.txt
