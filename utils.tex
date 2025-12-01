@@ -25,11 +25,15 @@
 % Font for Bengali
 \newfontfamily\bengalifont[
     Script=Bengali,
-    Language=Bengali
-]{Tiro Bangla}
+    Language=Bengali,
+    Path = ./,
+    UprightFont = TiroBangla-Regular.ttf,
+    BoldFont    = TiroBangla-Italic.ttf
+]{TiroBangla}
+
 
 % Emoji support for XeLaTeX
-\newfontfamily\emojifont{Segoe UI Emoji}
+\newfontfamily\emojifont{Noto Color Emoji}
 \newcommand{\emoji}[1]{{\emojifont #1}}
 
 % Custom commands
