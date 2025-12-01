@@ -22,13 +22,25 @@
 \usepackage{mathtools} % For rcases
 
 % Font specifications
+% Main English font (default Latin Modern)
+% \setmainfont{Latin Modern Roman}
+
+% Handwritten style font
+\newfontfamily\handwrittenfont[
+    Path = ./,
+    UprightFont = HomemadeApple-Regular.ttf
+]{HomemadeApple}
+
+% Handwritten environment (use like \begin{handwritten}...\end{handwritten})
+\newenvironment{handwritten}{\handwrittenfont}{}
+
 % Font for Bengali
 \newfontfamily\bengalifont[
     Script=Bengali,
     Language=Bengali,
     Path = ./,
     UprightFont = TiroBangla-Regular.ttf,
-    BoldFont    = TiroBangla-Italic.ttf
+    ItalicFont  = TiroBangla-Italic.ttf
 ]{TiroBangla}
 
 

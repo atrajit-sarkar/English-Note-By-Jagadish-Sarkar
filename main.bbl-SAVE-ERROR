@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{AKG}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9726004d9de6a2d8425f38bd98e88ae6}{%
+           family={Ghosh},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Delhi, India}%
+      }
+      \list{publisher}{1}{%
+        {Hypothetical Publishers}%
+      }
+      \strng{namehash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{fullhash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{fullhashraw}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{bibnamehash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{authorbibnamehash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{authornamehash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{authorfullhash}{9726004d9de6a2d8425f38bd98e88ae6}
+      \strng{authorfullhashraw}{9726004d9de6a2d8425f38bd98e88ae6}
+      \field{labelalpha}{A.K. ghosh}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1234567890}
+      \field{shorthand}{A.K. ghosh}
+      \field{title}{A.K. Ghosh English Grammar}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
