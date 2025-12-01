@@ -9,36 +9,55 @@
     "latex": false
   },
   "editor.suggest.showSnippets": true,
+
   "[latex]": {
     "editor.inlineSuggest.enabled": false
   },
+
+  // -------- LaTeX Workshop: RECIPES --------
   "latex-workshop.latex.recipes": [
     {
-      "name": "xelatex -> biber -> xelatex×2",
+      // Fast, realtime-ish build (no explicit biber call; latexmk decides)
+      "name": "Fast LuaLaTeX (latexmk)",
       "tools": [
-        "xelatex",
-        "biber",
-        "xelatex",
-        "xelatex"
+        "latexmk-lua"
       ]
     },
     {
-      "name": "xelatex",
+      // Full build with bibliography, use when you need final PDF
+      "name": "lualatex -> biber -> lualatex×2",
       "tools": [
-        "xelatex",
-        "xelatex"
+        "lualatex",
+        "biber",
+        "lualatex",
+        "lualatex"
       ]
     }
   ],
+
+  // -------- LaTeX Workshop: TOOLS --------
   "latex-workshop.latex.tools": [
     {
-      "name": "xelatex",
-      "command": "xelatex",
+      "name": "lualatex",
+      "command": "lualatex",
       "args": [
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
         "%DOCFILE%"
+      ]
+    },
+    {
+      // latexmk driving lualatex (fast incremental builds)
+      "name": "latexmk-lua",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-lualatex",
+        "%DOC%"
       ]
     },
     {
@@ -48,5 +67,13 @@
         "%DOCFILE%"
       ]
     }
-  ]
+  ],
+
+  // -------- Build behaviour / "realtime" feel --------
+  // Build as you type (can be heavy on huge docs; change to "onSave" if needed)
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+
+  // Optional: make VS Code save automatically so "onSave" feels realtime
+  // "files.autoSave": "afterDelay",
+  // "files.autoSaveDelay": 1000
 }
