@@ -7,6 +7,13 @@
 % Secondary language
 \setotherlanguage{bengali}
 
+% Bibliography (must come after polyglossia)
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    sorting=nyt
+]{biblatex}
+
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{booktabs}
@@ -52,7 +59,7 @@ $\begin{rcases}
 \newcommand{\subtopic}[1]{%
     \begin{center}
         \begin{tikzpicture}
-            \node[cloud, draw, cloud puffs=15, cloud puff arc=120, aspect=3, fill=gray!10, inner sep=10pt] {\underline{\textbf{#1}}};
+            \node[cloud, draw, cloud puffs=38, cloud puff arc=180, aspect=8, fill=gray!10, inner sep=1pt, inner ysep=1pt] {\underline{\textbf{#1}}};
         \end{tikzpicture}
     \end{center}
 }

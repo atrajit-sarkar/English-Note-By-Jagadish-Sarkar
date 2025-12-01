@@ -14,6 +14,15 @@
   },
   "latex-workshop.latex.recipes": [
     {
+      "name": "xelatex -> biber -> xelatex×2",
+      "tools": [
+        "xelatex",
+        "biber",
+        "xelatex",
+        "xelatex"
+      ]
+    },
+    {
       "name": "xelatex",
       "tools": [
         "xelatex",
@@ -29,6 +38,13 @@
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": [
         "%DOCFILE%"
       ]
     }

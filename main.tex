@@ -4,8 +4,7 @@
 \usepackage{book-theme}
 % Import utilities (includes font specs and custom commands)
 \input{utils.tex}
-
-
+\addbibresource{main.bib}   % your .bib file
 
 
 % Document
@@ -32,5 +31,9 @@
 
 % First chapter
 \include{chapter-1}
+
+
+% References
+\printbibliography[title={References}]
 
 \end{document}
